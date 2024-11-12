@@ -1,13 +1,18 @@
+
+
 <div class="card">
+
+  <input class='card__input' type="text" #pokemonInput (input)="getPokemon(pokemonInput.value)">
+
   <div class = 'card__title'>
-    <h3>{{name}}</h3>
+    <h3>{{pokemon.name}}</h3>
   </div>
   <div class = 'card__body'>
-    <img src="" alt="Pokemon">
+    <img [src]="pokemon.sprites.front_default" heigth='auto' width="150" alt="Pokemon">
   </div>
   <div class = 'card__stats'>
-    @for (item of attributesTypes; track $index) {
-      <span class="card__stats__type">{{item}}</span>
+    @for (t of pokemon.types; track $index) {
+      <span class="card__stats__type">{{t.type.name}}</span>
     }
   </div>
 

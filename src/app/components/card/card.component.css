@@ -7,6 +7,8 @@
   border-radius: 10px;
   background-color: #232323;
 }
+
+
 .card__title{
   margin-left: auto;
   margin-right: auto;
@@ -19,6 +21,9 @@
 }
 
 .card__body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #616161 ;
   width: 90%;
   margin-left: auto;
@@ -41,4 +46,9 @@
   margin-right: 3px;
   padding: 5px;
   border-radius: 5px;
+}
+
+.card__input{
+  padding-bottom: 5px;
+  margin-bottom: ;
 }

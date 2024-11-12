@@ -9,11 +9,6 @@ import { CardComponent } from "./components/card/card.component";
   template: `<h1>Aula services</h1><app-card></app-card><router-outlet></router-outlet>`,
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'services';
-
-
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
 }
